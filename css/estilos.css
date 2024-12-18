@@ -1,0 +1,396 @@
+/*import de google fonts*/
+* {
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(255, 250, 242);
+}
+h1{
+   /* padding-top:30px;*/
+    color: #510d1b;
+    font-size: 3rem;
+    text-align: center;
+}
+@media  screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+}
+
+h2{
+    padding-top:25px;
+    color: #510d1b;
+    font-size: 2rem;
+    text-align: center;
+}
+/*Header*/
+.header{
+    background-color: rgba(145, 142, 135, 0.541);
+    font-size: 10px;
+    position:sticky;
+    top:0;
+    z-index:1005;
+    height:15vh;
+    padding:10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .logo{
+        width: 50px;
+    }
+    nav{
+      
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color:  #510d1b;
+                    font-size: 1.8em;
+                  
+                }
+            }
+           
+        }
+    }
+}
+
+
+/*Estilos seccion principal del index*/
+.principalIndex{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image:url("../assets/img/mascotas_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    height: 85vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    .contenedorTextoPrincipalIndex{
+        z-index: 1002;
+        margin:0 auto;
+        margin-top: 30px;
+        border:2px solid  #510d1b;
+        padding:10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 50%;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        
+        
+        backdrop-filter: blur(15px);
+        
+        
+        p{
+            font-size: 2.5em;
+        }
+        a{
+            display:inline-block;
+            margin-top:20px;
+            text-decoration: none;
+            color: rgb(28, 27, 27);
+            font-size: 2.5em;
+            border:2px solid black;
+            padding:8px;
+            border-radius:5px;
+            box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.228);
+
+        }
+    }
+}
+
+.contenedorTextoPrincipalIndexMobile{
+    display:none;
+}
+
+@media  screen and (max-width: 768px) {
+    .principalIndex{
+        .contenedorTextoPrincipalIndex{
+            display: none;
+        }
+        
+    }
+    .contenedorTextoPrincipalIndexMobile{
+        display:block;
+        margin:0 auto;
+        margin-top: 30px;
+        border:2px solid  #510d1b;
+        padding:10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 90%;
+        font-size: 1rem;
+     
+
+    }
+
+}
+
+/*productos Destacados*/
+.productosDestacados{
+    .galeriaDestacados{
+        padding:20px;
+        margin:0 auto;
+        width: 90%;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .tarjetaDestacados{
+            text-align: center;
+         /*   border: 1px solid rgb(67, 67, 67);*/
+            padding: 10px;
+            box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+            border-radius: 5px;
+           
+            img{
+                width: 200px;
+             }
+        }
+    }
+}
+@media  screen and (max-width: 768px) {
+    .productosDestacados{
+        .galeriaDestacados{
+             justify-content: center;
+             row-gap: 20px;
+            .tarjetaDestacados{
+                text-align: center;
+             /*   border: 1px solid rgb(67, 67, 67);*/
+                padding: 10px;
+                box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+                border-radius: 5px;
+               
+                img{
+                    width: 200px;
+                 }
+            }
+        }
+    }
+}
+
+/*marcas que se venden del index*/
+.boton{
+    display: inline-block;
+    margin-top:50px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:black;
+    border-radius: 5px;
+    box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+}
+.marcasQueSeVenden{
+    text-align: center;
+    .galeriaMarcas{
+        margin-top:15px;
+        background-color: pink;
+        padding:50px;
+       /* margin:0 auto;
+        width: 90%;*/
+        display:flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        flex-wrap: wrap;
+        img{
+            width: 100px;
+        }
+    }
+}
+
+/*OPINION DE CLIENTES RESEÑAS*/
+.opinionClientes{
+    text-align: center;
+    .galeriaClientes{
+       
+        padding:50px;
+        margin:0 auto;
+        width: 60%;
+        display:flex;
+        justify-content: space-evenly;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        .tarjetaClientes{
+            width: 250px;
+        }
+    }
+}
+/*Nosotros index*/
+.nosotros{
+    text-align: center;
+    padding:20px;
+      height: 100vh;
+      width: 100%;
+    .contenedorNosotros{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90%;
+        width: 100%;
+        .uno{
+            background-image: url("../assets/img/petshop.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            width:50%;
+            height: 100%;
+        }
+        .dos{
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    /*footer*/
+   .nosotros{
+    
+    .contenedorNosotros{
+        padding-top:20px;
+        flex-direction:column;
+        justify-content: center;
+       /* row-gap: 10px;*/
+        .uno{
+            width: 100%;
+            height: 70%;
+            order:2;
+        }
+        .dos{
+            width: 100%;
+            height: 30%;
+            order:1;
+        }
+    }
+    
+   }
+}
+
+
+/*FIN DE ESTILOS DEL INDEX*/
+
+/*galeria de pagina PRODUCTOS*/
+.galeriaGridDulces{
+   /* height: 100vh;*/
+   width: 90%;
+   margin:0 auto;
+    display:grid;
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+   /* grid-auto-rows: 250px;*/
+    grid-template-areas:  "chese choco"
+                          "budin choco"
+                          "cuadrado choco"
+                          "cuadrado alfajor"
+                         ;
+    gap:25px;
+   .hijo_1{
+    grid-area:chese;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .hijo_2{
+    grid-area:choco;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .hijo_3{
+    grid-area: budin;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .hijo_4{
+    grid-area: cuadrado;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .hijo_5{
+    grid-area: alfajor;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+  
+}
+/*footer*/
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding:20px;
+
+    background-image: radial-gradient(circle, #e592a2, #e59caa, #e5a6b2, #e5afba, #e5b9c2, #e5b9c2, #e5b9c2, #e5b9c2, #e5afba, #e5a6b2, #e59caa, #e592a2);
+    font-size: 10px;
+    .logo{
+        width: 100px;
+    }
+    ul{
+        list-style: none;
+      
+        a{
+            text-decoration: none;
+            color:  #510d1b;
+            font-size: 1.5em;
+        }
+        .fa-instagram, .fa-facebook, .fa-twitter{
+            font-size: 3em;
+        }
+    }
+    .fa-whatsapp{
+        font-size: 5em;
+        color:rgb(44, 181, 44);
+        position:fixed;
+        bottom: 20px;
+        right: 20px;
+       
+    }
+    p{
+        font-size: 1.5em;
+      
+    }
+
+}
+@media screen and (max-width:768px){
+    /*footer*/
+   .footer{
+     flex-direction: column;
+     height: initial;
+     align-items: start;
+     row-gap:20px;
+   }
+}
+
+
+.displayNone{
+    display:none;
+}
+
+/*COMO CREO UN DIV REDONDO,
+
+TIENE QUE SER CUADRADO, 200 X 200 
+border-radius:50%;
+
+
+
+
+*/
+
+.text-danger{
+    color:rgb(133, 5, 5)
+}
